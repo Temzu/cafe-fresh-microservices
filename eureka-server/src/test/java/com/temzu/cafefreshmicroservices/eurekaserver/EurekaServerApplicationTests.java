@@ -1,10 +1,10 @@
-package com.temzu.cafefreshmicroservices;
+package com.temzu.cafefreshmicroservices.eurekaserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CafeFreshMicroservicesApplicationTests {
+class EurekaServerApplicationTests {
 
   @Test
   void contextLoads() {
