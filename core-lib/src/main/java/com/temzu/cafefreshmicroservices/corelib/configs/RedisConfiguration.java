@@ -22,16 +22,16 @@ public class RedisConfiguration {
 //  @Value("${spring.redis.username}")
 //  private String redisUserName;
 
-  @Value("${spring.data.redis.host}")
-  private String redisHost;
-
-  @Value("${spring.data.redis.port}")
-  private int redisPort;
+//  @Value("${spring.data.redis.host}")
+//  private String redisHost;
+//
+//  @Value("${spring.data.redis.port}")
+//  private int redisPort;
 
 
   @Bean
   public RedisConnectionFactory jedisConnectionFactory() {
-    RedisStandaloneConfiguration config = new RedisStandaloneConfiguration(redisHost, redisPort);
+    RedisStandaloneConfiguration config = new RedisStandaloneConfiguration("localhost", 6379);
 //    config.setPassword(redisPassword);
 //    config.setUsername(redisUserName);
     return new JedisConnectionFactory();
